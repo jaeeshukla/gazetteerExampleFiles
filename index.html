@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="libs/css/styles.css">
+
+		<!-- this is added for Leaflet maps -->    <!-- href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+		 <!-- Make sure you put this AFTER Leaflet's CSS -->   <!-- src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""></script>
+	
+	<!-- below two links are to bootsrap framework-->
+   <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css"> 
+   <script src="bootstrap-5.0.0-beta2-dist/bootstrap-5.0.0-beta2-dist/css/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	
+	
+	<!-- <div>
+	<button id="btncurr">Get Currency </button>  
+	
+	</div> -->
+	
+	<div class="country">
+	<label for="selCountry" id="lblname"> Select the Country :  </label>
+		<select id="selCountry">
+		<!-- 	<option value="">Select</option>
+			<option value="unitedkingdom">United Kingdom</option>
+			<option value="srilanka">Sri Lanka</option> -->
+		
+		</select>
+		
+		
+		<br>
+		<br>
+				
+		</div>
+		
+	<!-- <div>
+	<button id="btninfo">Get Countries </button>  
+	
+	</div>
+	 -->
+	
+	
+	
+	<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Fetch Information</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="infoData"> </p>
+  </div>
+
+</div>
+
+	
+	 <div id="mapid">
+	 
+	 </div>
+	 
+				
+	
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="libs/js/script.js"></script>
+		
+		 
+<!-- <script>	
+		
+		var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+
+console.log(position.coords.latitude);
+console.log(position.coords.longitude);
+}
+</script>  -->
+
+
+
+	</body>
+</html>
