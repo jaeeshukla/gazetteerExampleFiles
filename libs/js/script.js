@@ -73,10 +73,10 @@ getCountry();
 
 function onClick(e)
 {
-
+  //window.marker.closePopup();
   modal.style.display = "block";
   clickinfo();
-  
+
 }
 
 function onClickMarker(e)
@@ -192,7 +192,7 @@ function funcUpdateMarker(countrycode)
 	 function myFunction(){
 		 console.log("existing someFeatures");
 		 console.log(window.someFeatures);
-		 
+		 modal.style.display = "none";
 		 
 		 myLayer.clearLayers(); 
 	
